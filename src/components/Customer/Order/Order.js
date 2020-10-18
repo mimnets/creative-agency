@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import CustomerHome from '../CustomerHome/CustomerHome';
 import CustomerNav from '../CustomerNav/CustomerNav';
 import './Order.css'
 
 const Order = () => {
+    const {orderId} = useParams();
+    const [service, setService] = useState([]);
+    const {name, _id} = service.find(element => element._id.toSting() === _id.toSting());
+    useEffect(() => {
+        fetch(`http://localhost:5000/services/${orderId}`)
+        .then(res => res.json())
+        .then(data =>{
+            setService(data);
+        })
+    },[])
+    
     return (
         <section>
             <div className="row">
@@ -24,7 +36,7 @@ const Order = () => {
                     </div>
                     <br/>
                     <div>
-                        <input type="text" class="form-control" placeholder="Select Service"/>
+                        <input type="text" class="form-control" placeholder={name}/>
                     </div>
                     <br/>
                     <div>

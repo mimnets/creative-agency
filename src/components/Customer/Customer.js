@@ -21,7 +21,7 @@ const Customer = () => {
         <Route path="/customer/service-list">
         <CustomerServiceList></CustomerServiceList>
         </Route>
-        <Route path="/customer/order">
+        <Route path="/customer/">
         <Order></Order>
         </Route>
         </Switch>

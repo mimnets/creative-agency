@@ -8,6 +8,7 @@ import {
 import './App.css';
 import Customer from './components/Customer/Customer';
 import Home from './components/Home/Home/Home';
+import ServiceList from './components/Home/OurService/ServiceList/ServiceList';
 import Login from './components/Login/Login';
 
 export const  UserContext = createContext(); 
@@ -21,7 +22,10 @@ function App() {
       <Route path="/login">
       <Login/>
       </Route>
-      <Route path="/customer">
+      <Route path="/service/:orderId">
+      <ServiceList></ServiceList>
+      </Route>
+      <Route path="/customer/">
       <Customer></Customer>
       </Route>
       <Route exact path="/">
