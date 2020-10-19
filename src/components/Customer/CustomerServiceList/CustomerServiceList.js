@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from '../../../App';
 import CustomerNav from '../CustomerNav/CustomerNav';
 
 const CustomerServiceList = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+    
     return (
         <section>
             <div className="row">

@@ -20,7 +20,7 @@ const Login = () => {
     const history = useHistory();
     const location = useLocation();
     
-let { from } = location.state || { from: {pathname: "/customer/order"} };
+let { from } = location.state || { from: {pathname: "/"} };
 
 const googleSignIn = () =>{
     handleGoogleSignIn()
@@ -41,11 +41,11 @@ const handleResponse = (res, redirect) =>{
     return (
         <section>
             <Navbar></Navbar>
-            <div class="row justify-content-center my-5 ty-5">
-        <div class="col-sm-6">
-            <div class="card">
-            <div class="card-body">
-                <p class="card-text">Login</p>
+            <div className="row justify-content-center my-5 ty-5">
+        <div className="col-sm-6">
+            <div className="card">
+            <div className="card-body">
+                <p className="card-text">Login</p>
                 <a onClick={googleSignIn} className="btn btn-login" >Continue with Google</a>
                 <br/>
                 <button className="btn btn-login">Don't have an account? <a href="" onClick={googleSignIn}>Create an account</a></button>
