@@ -20,10 +20,6 @@ const OurWorks = () => {
               src="https://1.bp.blogspot.com/-HQAkin1xXpc/X4iMq9LPC0I/AAAAAAAAoYQ/d5Nv3j2yiyQVSRxGtw1cYQhkwUln3mEUQCLcBGAsYHQ/s1110/carousel-5.png"
               alt="First slide"
             />
-            {/* <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption> */}
           </Carousel.Item>
           <Carousel.Item>
             <img
@@ -31,11 +27,6 @@ const OurWorks = () => {
               src="https://1.bp.blogspot.com/-Jh3qWrR8l1c/X4iMpUkdozI/AAAAAAAAoYE/OEYc8xVsTk89buP9xXA1QpbkZxM0AC9jQCLcBGAsYHQ/s1397/carousel-1.png"
               alt="Third slide"
             />
-
-            {/* <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption> */}
           </Carousel.Item>
           <Carousel.Item>
             <img
@@ -44,10 +35,6 @@ const OurWorks = () => {
               alt="Third slide"
             />
 
-            {/* <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption> */}
           </Carousel.Item>
         </Carousel>
             </div>

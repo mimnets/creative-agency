@@ -26,6 +26,9 @@ const Navbar = () => {
             <li className="nav-item">
                 <a className="nav-link mx-3" href="#">Contact</a>
             </li>
+            <li className="nav-item">
+                <a className="nav-link mx-3" href="/admin">Admin</a>
+            </li>
             </ul>
             <button className="btn btn-nbar my-2 my-sm-0 " type="submit"><span style={{color:'white'}}><Link to="/login">Login</Link></span></button>
         </div>

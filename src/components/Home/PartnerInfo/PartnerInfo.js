@@ -25,7 +25,7 @@ const PartnerInfo = () => {
         <section className="d-flex justify-content-center mt-4">
             <div className="w-75 row">
                 {
-                    brandInfo.map(info => <OurPartner brand={info}></OurPartner>)
+                    brandInfo.map(info => <OurPartner brand={info} key={info.img}></OurPartner>)
                 }
             </div>
         </section>

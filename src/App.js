@@ -6,10 +6,14 @@ import {
   Route,
 } from "react-router-dom";
 import './App.css';
-import Customer from './components/Customer/Customer';
 import Home from './components/Home/Home/Home';
 import ServiceList from './components/Home/OurService/ServiceList/ServiceList';
 import Login from './components/Login/Login';
+import Customer from './components/Customer/Customer/Customer';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import CustomerServices from './components/Customer/CustomerServices/CustomerServices';
+import Review from './components/Customer/Review/Review';
+import Admin from './components/Admin/Admin';
 
 export const  UserContext = createContext(); 
 
@@ -22,13 +26,19 @@ function App() {
       <Route path="/login">
       <Login/>
       </Route>
-      <Route path="/service/:orderId">
-      <ServiceList></ServiceList>
-      </Route>
-      <Route path="/customer/">
+      <PrivateRoute path="/customer/order/:orderId">
       <Customer></Customer>
-      </Route>
-      <Route exact path="/">
+      </PrivateRoute>
+      <PrivateRoute path="/customer/service">
+      <CustomerServices></CustomerServices>
+      </PrivateRoute>
+      <PrivateRoute path="/customer/review">
+      <Review></Review>
+      </PrivateRoute>
+      <PrivateRoute path="/admin">
+      <Admin></Admin>
+      </PrivateRoute>
+      <Route path="/">
       <Home></Home>
       </Route>
       </Switch>

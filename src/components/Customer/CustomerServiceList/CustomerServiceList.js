@@ -1,22 +1,21 @@
-import React, { useContext } from 'react';
-import { UserContext } from '../../../App';
-import CustomerNav from '../CustomerNav/CustomerNav';
+import React from 'react';
+import { Card } from 'react-bootstrap';
+import './CustomerServices.css';
 
-const CustomerServiceList = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
-    
+const CustomerServiceList = (props) => {
+    const {serviceName, img, description} = props.slists;
     return (
-        <section>
-            <div className="row">
-            <div className="col-md-2">
-            <CustomerNav></CustomerNav>
-                </div>
-                <div className="col-md-10 my-2 ty-2">
-                    
-                    <h3>Service List</h3>
-                </div>
-            </div>
-        </section>
+        <div className="col-md-4 d-flex text-center service-container">
+            <Card>
+            <Card.Img variant="top" src={img} />
+            <Card.Body>
+                <Card.Title>{serviceName}</Card.Title>
+                <Card.Text>
+                {description}
+                </Card.Text>
+            </Card.Body>
+            </Card>
+        </div>
     );
 };
 

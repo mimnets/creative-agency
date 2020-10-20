@@ -13,15 +13,15 @@ const Contact = () => {
             <div className="col-md-6">
             <form>
             <div>
-                <input type="text" class="form-control" placeholder="Your email address"/>
+                <input type="text" className="form-control" placeholder="Your email address"/>
             </div>
             <br/>
             <div>
-            <input type="text" class="form-control" placeholder="Your name / company's name"/>
+            <input type="text" className="form-control" placeholder="Your name / company's name"/>
             </div>
             <br/>
             <div>
-            <textarea type="textarea" style={{height:'200px'}} class="form-control" placeholder="Your message"/>
+            <textarea type="textarea" style={{height:'200px'}} className="form-control" placeholder="Your message"/>
             <br/>
             <button className="btn btn-ca btn-md"><span style={{color:'white'}}>Send</span></button>
             </div>

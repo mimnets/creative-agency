@@ -12,11 +12,12 @@ export const handleGoogleSignIn = () => {
     const googleProvider = new firebase.auth.GoogleAuthProvider();
     return firebase.auth().signInWithPopup(googleProvider)
     .then(res =>{
-        const {displayName, email} = res.user;
+        const {displayName, email, photoURL} = res.user;
         const signedInUser = {
             isSignedIn : true,
             name : displayName,
-            email: email
+            email: email,
+            img: photoURL
         }
         return signedInUser;
     })

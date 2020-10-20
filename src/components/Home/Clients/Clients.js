@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     }
   }));
 
-const Clients = ({clientFeed}) => {
+const Clients = ({reviews}) => {
     const classes = useStyles();
     return (
         
@@ -16,17 +16,17 @@ const Clients = ({clientFeed}) => {
                         <Card className={classes.root}>
                     <CardHeader
                         avatar={
-                        <Avatar aria-label={clientFeed.img} className={classes.avatar}>
-                            <img src={clientFeed.img} alt=""/>
+                        <Avatar aria-label={reviews.img} className={classes.avatar}>
+                            <img src={reviews.img} alt=""/>
                         </Avatar>
                         }
                         
-                        title={clientFeed.name}
-                        subheader={clientFeed.title}
+                        title={reviews.name}
+                        subheader={reviews.designation}
                     />
                     <CardContent>
                         <Typography variant="body2" color="textSecondary" component="p">
-                        {clientFeed.description}
+                        {reviews.review}
                         </Typography>
                     </CardContent>
                     </Card>

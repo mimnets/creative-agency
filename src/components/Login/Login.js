@@ -12,6 +12,7 @@ const Login = () => {
         name:'',
         email:'',
         password:'',
+        img:''
     })
 
     initializeLoginFramework();
@@ -41,17 +42,15 @@ const handleResponse = (res, redirect) =>{
     return (
         <section>
             <Navbar></Navbar>
-            <div className="row justify-content-center my-5 ty-5">
-        <div className="col-sm-6">
+            <div className="text-center my-5 ty-5 container">
             <div className="card">
             <div className="card-body">
-                <p className="card-text">Login</p>
+                <p className="card-text">Login With</p>
                 <a onClick={googleSignIn} className="btn btn-login" >Continue with Google</a>
                 <br/>
-                <button className="btn btn-login">Don't have an account? <a href="" onClick={googleSignIn}>Create an account</a></button>
+                <h6>Don't have an account? <a href="" onClick={googleSignIn}>Create an account</a></h6>
             </div>
             </div>
-        </div>
         </div>
         </section>
         
