@@ -12,7 +12,8 @@ const Order = () => {
         }
 
     const [service, setService] = useState([]);
-
+        console.log(service);
+        const {serviceName, description, img} = service; 
     const {orderId} = useParams();
     useEffect(() => {
         fetch(`https://pacific-bayou-45893.herokuapp.com/services/${orderId}`)
@@ -23,7 +24,7 @@ const Order = () => {
     })
 
     const handleOrder = () => {
-        const addOrder = {...loggedInUser, ...service, ...details};
+        const addOrder = {...loggedInUser, serviceName, description, img, ...details};
         fetch("https://pacific-bayou-45893.herokuapp.com/addOrder", {
             method: "POST",
             headers:{

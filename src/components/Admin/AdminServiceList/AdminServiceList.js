@@ -9,7 +9,7 @@ const AdminServiceList = (props) => {
             <table className="table">
             <thead>
                 <tr>
-                <th scope="col">#</th>
+                {/* <th scope="col">#</th> */}
                 <th scope="col">Name</th>
                 <th scope="col">Email Id</th>
                 <th scope="col">Service</th>
@@ -19,7 +19,7 @@ const AdminServiceList = (props) => {
             </thead>
             <tbody>
                 <tr>
-                <th scope="row">1</th>
+                {/* <th scope="row">1</th> */}
                 <td>{name}</td>
                 <td>{email}</td>
                 <td>{serviceName}</td>
