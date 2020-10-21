@@ -18,7 +18,6 @@ const AdminServices = () => {
                 <table className="table">
             <thead>
                 <tr>
-                {/* <th scope="col">#</th> */}
                 <th scope="col">Name</th>
                 <th scope="col">Email Id</th>
                 <th scope="col">Service</th>
