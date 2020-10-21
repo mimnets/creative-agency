@@ -23,7 +23,7 @@ const AdminServices = () => {
                 <th scope="col">Email Id</th>
                 <th scope="col">Service</th>
                 <th scope="col">Project Details</th>
-                <th scope="col">Status</th>
+                <th scope="col">Image</th>
                 </tr>
             </thead>
                     {

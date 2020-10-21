@@ -13,7 +13,7 @@ const AdminServiceList = (props) => {
                 <td>{email}</td>
                 <td>{serviceName}</td>
                 <td>{description}</td>
-                <td>{serviceName}</td>
+                <td><img src={img} height="74px" width="74px" alt=""/></td>
                 </tr>
             </tbody>
         // </div>

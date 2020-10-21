@@ -7,14 +7,12 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Home from './components/Home/Home/Home';
-import ServiceList from './components/Home/OurService/ServiceList/ServiceList';
 import Login from './components/Login/Login';
 import Customer from './components/Customer/Customer/Customer';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import CustomerServices from './components/Customer/CustomerServices/CustomerServices';
 import Review from './components/Customer/Review/Review';
 import Admin from './components/Admin/Admin';
-import AdminServices from './components/Admin/AdminServices/AdminServices';
 import AdminAddService from './components/Admin/AdminAddService/AdminAddService';
 
 export const  UserContext = createContext(); 
