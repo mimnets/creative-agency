@@ -9,8 +9,8 @@ const AdminNav = () => {
             <h6>{loggedInUser.name}</h6>
             <nav className="nav flex-column">
             <a className="nav-link active" href="/admin/serviceList">Service List</a>
-            <a className="nav-link" href="/admin/addService">+ Add Service</a>
-            <a className="nav-link" href="/admin/new">Make Admin</a>
+            <a className="nav-link" href="/addService">+ Add Service</a>
+            <a className="nav-link" href="/new">Make Admin</a>
             </nav>
         </div>
     );
