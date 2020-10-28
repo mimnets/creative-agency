@@ -1,4 +1,4 @@
-# Creative Agency - This project created and submitted as a assignment at learning with Programming Hero Team.
+# Creative Agency - This project created and submitted as a assignment on my learning path with Programming Hero Team.
 
 The site is built with :
 
